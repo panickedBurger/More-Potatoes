@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "minecraft:potato"
+      },
+      {
+        "item": "minecraft:potato"
+      },
+      {
+        "item": "minecraft:milk_bucket"
+      },
+      {
+        "item": "minecraft:carrot"
+      },
+      {
+        "item": "minecraft:bowl"
+      }
+    ],
+    "result": {
+      "id": "minecraft:suspicious_stew",
+      "count": 1,
+      "components": {
+        "minecraft:food": {
+          "nutrition": 10,
+          "saturation": 6,
+          "can_always_eat": false,
+          "eat_seconds": 1.6,
+          "using_converts_to": {
+            "id": "minecraft:bowl"
+          }
+        },
+        "minecraft:item_name": "{\"text\":\"Potato Soup\"}",
+        "minecraft:custom_model_data": 1000
+      }
+    }
+  }
+  

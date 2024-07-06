@@ -1,0 +1,42 @@
+{
+    "description": "Potato Whisperer",
+    "supported_items": "#pt:enchantable/potato_whisperer",
+    "weight": 2,
+    "max_level": 1,
+    "min_cost": {
+      "base": 15,
+      "per_level_above_first": 5
+    },
+    "max_cost": {
+      "base": 30,
+      "per_level_above_first": 5
+    },
+    "anvil_cost": 2,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:hit_block": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "pt:custom_enchantments/potato_whisperer/whisper"
+          },
+          "requirements": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.01
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:potatoes",
+              "properties": {
+                "age": "7"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

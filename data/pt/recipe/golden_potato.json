@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "XXX",
+      "XYX",
+      "XXX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:gold_nugget"
+      },
+      "Y": {
+        "item": "minecraft:potato"
+      }
+    },
+    "result": {
+      "id": "minecraft:potato",
+      "count": 1,
+      "components": {
+        "minecraft:food": {
+          "nutrition": 6,
+          "saturation": 14.4,
+          "can_always_eat": false,
+          "eat_seconds": 1.6
+        },
+        "minecraft:item_name": "{\"text\":\"Golden Potato\"}",
+        "minecraft:custom_model_data": 1003
+      }
+    }
+  }
+  

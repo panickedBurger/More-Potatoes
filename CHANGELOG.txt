@@ -1,0 +1,34 @@
+# V1.0
+Added:
+- Raretato
+10% Chance from farming potatoes with Potato Fiend (Minimum level: 1)
+
+- Legendary Potato
+1% Chance from farming potatoes with PotatoFiend (Minimum level: 3)
+
+- Sweet Potato
+Craftable
+
+- Golden Potato
+Craftable
+
+- Enchanted Golden Potato
+Craftable
+
+- Shard-Filled Potato
+Craftable
+
+- Rotten Potato
+Craftable
+
+- Magical Potato
+Craftable
+
+- Potato Soup
+Craftable
+
+- Potato Fiend
+Found in enchantment table, (Max level: 3)
+
+- Potato Whisperer
+Found in enchantment table, (Max level: 1)

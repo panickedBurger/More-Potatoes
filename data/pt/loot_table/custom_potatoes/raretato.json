@@ -1,0 +1,155 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:potato",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:food": {
+                    "nutrition": 4,
+                    "saturation": 2,
+                    "can_always_eat": true,
+                    "eat_seconds": 1.6,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:regeneration",
+                          "amplifier": 0,
+                          "duration": 100
+                        }
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:resistance",
+                          "amplifier": 0,
+                          "duration": 400
+                        }
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:speed",
+                          "amplifier": 0,
+                          "duration": 400
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": {
+                  "text": "Raretato",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "Very Rare!",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  "",
+                  {
+                    "text": "When Eaten:",
+                    "color": "dark_gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": " - Regeneration",
+                    "color": "dark_gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": " - Resistance",
+                    "color": "dark_gray",
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": " - Speed",
+                    "color": "dark_gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{raretato:1b}"
+              },
+              {
+                "function": "minecraft:set_custom_model_data",
+                "value": 1000
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:binomial",
+                  "n": 1,
+                  "p": 3
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "pt:potato_fiend",
+                        "levels": {
+                          "min": 1,
+                          "max": 255
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,18 @@
+{
+  "description": "Potato Fiend",
+  "supported_items": "#pt:enchantable/potato_fiend",
+  "weight": 2,
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 5
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 5
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "mainhand"
+  ]
+}

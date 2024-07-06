@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "id": "minecraft:potato",
+    "count": 1,
+    "components": {
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation": 2.0,
+        "can_always_eat": false,
+        "eat_seconds": 0.8
+      },
+      "minecraft:item_name": "{\"text\":\"Sweet Potato\"}",
+      "minecraft:custom_model_data": 1002
+    }
+  }
+}

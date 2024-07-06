@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:potato",
+            "predicates": {
+              "minecraft:custom_data": "{shard_filled_potato:1b}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "pt:eating_potatoes/shard_filled_potato/eat"
+    }
+  }
+  
